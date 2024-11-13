@@ -9,14 +9,14 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    main.cpp \
-    mainwindow.cpp
+    src/main.cpp \
+    src/mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h
+    include/mainwindow.h
 
 FORMS += \
-    mainwindow.ui
+    forms/mainwindow.ui
 
 TRANSLATIONS += \
     dell_monitor_controller_en_GB.ts
@@ -32,7 +32,7 @@ INCLUDEPATH += /usr/local/include/ddcutil
 LIBS += -L/usr/local/lib -lddcutil
 
 DISTFILES += \
-    loading.gif
+    img/loading.gif
 
 RESOURCES += \
     resources.qrc

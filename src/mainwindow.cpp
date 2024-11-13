@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "include/mainwindow.h"
 #include "ui_mainwindow.h"
 #include <cstdlib>
 #include <QProcess>
@@ -80,7 +80,7 @@ int MainWindow::getCurrentBrightness() {
 
 void MainWindow::setBrightness() {
     // Load the GIF using QMovie
-    QMovie *movie = new QMovie("://loading.gif");
+    QMovie *movie = new QMovie(":/imgs/loading.gif");
     if (!movie->isValid()) {
         qWarning("GIF could not be loaded!");
     }
@@ -119,7 +119,7 @@ void MainWindow::setBrightness() {
 
 void MainWindow::setContrast(){
     // Load the GIF using QMovie
-    QMovie *movie = new QMovie("://loading.gif");
+    QMovie *movie = new QMovie(":/imgs/loading.gif");
     if (!movie->isValid()) {
         qWarning("GIF could not be loaded!");
     }
