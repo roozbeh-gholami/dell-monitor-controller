@@ -1,0 +1,33 @@
+# Qt build directories
+/debug/
+build-*/       # Ignore all build directories
+*.pro.user
+*.pro.user.*
+# Qt Creator specific
+.qtc/
+
+# User-specific files
+*.user
+*.user.*
+
+# Temporary files
+*.log
+*.bak
+*.swp
+
+# CMake or qmake files (if applicable)
+CMakeLists.txt.user
+
+# IDE specific
+.idea/
+.vscode/
+
+# Other
+*.moc
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+
